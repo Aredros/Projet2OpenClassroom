@@ -1,0 +1,77 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    display: grid;
+}   
+/*Pour faire une columne prendre toute la place de l'ecran*/
+.whole-row{
+    grid-column: 1 / -1;
+}
+
+/*Pour faire le footer responsif*/
+footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+/*header*/
+header{
+    display: grid; 
+    /*this makes them both be in the same row*/
+    grid-auto-flow: column;  }
+
+/*Nav bar*/
+header img{
+    justify-self: start;
+}
+
+header nav{
+    justify-self: end;
+}
+
+#nav-menu{
+    text-align: right;
+}
+
+#nav-menu ul li{
+    display: inline-block;
+    margin: 5px;
+}
+
+#nav-menu ul li a{
+    color: lightgray;
+    text-decoration: none;
+    padding: 20px 20px;
+    border-top: 2px solid transparent;
+}
+
+#nav-menu ul li a:hover{
+    color: steelblue;
+    border-top: 2px solid steelblue;
+}
+
+/*TOP AREA*/
+.filter-ul li{
+    display: inline-block;
+}
+
+/*MID AREA*/
+.mid-total-area{
+    display: grid;
+}
+    /*Main mid-area*/
+
+section .middle-section{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(601px, 1fr));
+}
+    /*aside mid-area*/
+aside .middle-aside{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+/*BOTTOM AREA*/
+
+/*FOOTER*/
