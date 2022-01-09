@@ -14,6 +14,7 @@
 <body>
     <header class="whole-row">
         <img src="img/logo.png" style="height:50px; width:50px"/>
+        <div class="menu-phone-button">Menu</div>
         <nav id="nav-menu">
             <ul>
                 <li><a href="#">Hébergements</a></li>
@@ -25,7 +26,13 @@
     <section class="top-section whole-row">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <p>En plein centre ville ou en pleine nature</p>
-        <p>THE FORM</p>
+        <div>
+            <form action="/action_page.php">
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="search" id="gsearch" name="gsearch">
+                <button class="search-button" type="submit">Rechercher</button>
+              </form>
+        </div>
         <div>
             <ul class="filter-ul">
                 <li class="filtre-prephrase">Filtres</li>
@@ -46,53 +53,43 @@
         <h2 class="title-mid-section">Hébergements à Marseille</h2>
         </div> 
         <div class="option-cards-area">
-            <div class="card-option">
+            <div class="card-option card-bg">
                 <img src=""/>
                 <h3>Auberge La Cannebière</h3>
                 <p>Nuit à partirde 25<b>€</b></p>
                 <img class="stars" src="" />
             </div>
-        <div class="option-cards-area">
-            <div class="card-option">
+            <div class="card-option card-bg">
                 <img src=""/>
                 <h3>Auberge La Cannebière</h3>
                 <p>Nuit à partirde 25<b>€</b></p>
                 <img class="stars" src="" />
             </div>
-        </div>
-        <div class="option-cards-area">
-            <div class="card-option">
+            <div class="card-option card-bg">
                 <img src=""/>
                 <h3>Auberge La Cannebière</h3>
                 <p>Nuit à partirde 25<b>€</b></p>
                 <img class="stars" src="" />
             </div>
-        </div>
-        <div class="option-cards-area">
-            <div class="card-option">
+            <div class="card-option card-bg">
                 <img src=""/>
                 <h3>Auberge La Cannebière</h3>
                 <p>Nuit à partirde 25<b>€</b></p>
                 <img class="stars" src="" />
             </div>
-        </div>
-        <div class="option-cards-area">
-            <div class="card-option">
+            <div class="card-option card-bg">
                 <img src=""/>
                 <h3>Auberge La Cannebière</h3>
                 <p>Nuit à partirde 25<b>€</b></p>
                 <img class="stars" src="" />
             </div>
-        </div>
-        <div class="option-cards-area">
-            <div class="card-option">
+            <div class="card-option card-bg">
                 <img src=""/>
                 <h3>Auberge La Cannebière</h3>
                 <p>Nuit à partirde 25<b>€</b></p>
                 <img class="stars" src="" />
             </div>
         </div>
-    </div>
     <p>Afficher plus</p>
     </section>
                         <!--Aside options populaires-->
@@ -102,7 +99,7 @@
             <img class="icon-aside-title"/>
         </div>
         <div class="aside-card-area">
-            <div class="aside-card">
+            <div class="aside-card card-bg">
                 <div class="aside-card-img-area">
                     <img class="aside-card-img" src="" />
                 </div>
@@ -112,7 +109,7 @@
                     <img class="stars" src="" />
                 </div>
             </div>
-            <div class="aside-card">
+            <div class="aside-card card-bg">
                 <div class="aside-card-img-area">
                     <img class="aside-card-img" src="" />
                 </div>
@@ -122,7 +119,7 @@
                     <img class="stars" src="" />
                 </div>
             </div>
-            <div class="aside-card">
+            <div class="aside-card card-bg">
                 <div class="aside-card-img-area">
                     <img class="aside-card-img" src="" />
                 </div>
@@ -139,8 +136,58 @@
     <section class="bottom-section whole-row">
         <h2 class="title-mid-section">Activitès à Marseille</h2>
         <div class="activites-cards-area">
-
-
+            <div class="activity-card big-card">
+                <div>
+                    <img src="" alt=""/>
+                </div>
+                <h3>
+                    Vieux Port
+                </h3>
+            </div>
+        <div class="two-cards">
+            <div class="activity-card small-card">
+                <div>
+                    <img src="" alt=""/>
+                </div>
+                <h3>
+                    Fort de Pomègues
+                </h3>
+            </div>
+            <div class="activity-card small-card">
+                <div>
+                    <img src="" alt=""/>
+                </div>
+                <h3>
+                    Iles du Frioul
+                </h3>
+            </div>
+        </div>
+            <div class="activity-card big-card">
+                <div>
+                    <img src="" alt=""/>
+                </div>
+                <h3>
+                    Parc National des Calanques
+                </h3>
+            </div>
+        <div class="two-cards">
+            <div class="activity-card small-card">
+                <div>
+                    <img src="" alt=""/>
+                </div>
+                <h3>
+                    Notre-Dame-de-la-Garde
+                </h3>
+            </div>
+            <div class="activity-card small-card">
+                <div>
+                    <img src="" alt=""/>
+                </div>
+                <h3>
+                    Parc Longchamp
+                </h3>
+            </div>
+        </div>
         </div>
     </section>
                         <!--Footer-->

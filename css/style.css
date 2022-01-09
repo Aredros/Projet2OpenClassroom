@@ -14,8 +14,16 @@
 }
 
 body{
-   
 }   
+/*padding whole site*/
+header, footer div{
+    padding: 30px;
+}
+
+.bottom-section, .mid-total-area, .top-section{
+    padding-left: 30px;
+    padding-right: 30px;
+}
 
 /*Pour faire le footer responsif*/
 footer{
@@ -27,8 +35,7 @@ footer{
 /*header*/
 header{
     display: flex; 
-    justify-content: space-between;
-    margin: 30px;
+    flex-direction: column;
 }
 
 /*Nav bar*/
@@ -39,6 +46,20 @@ header img{
 header nav{
     
 }
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (min-width: 800px) {
+    header{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu-phone-button {
+      display: none;
+    }
+  }
+
+
 
 #nav-menu{
     
@@ -67,31 +88,91 @@ header nav{
     display: inline-block;
 }
 
+form{
+    position: relative;
+    display: flex;
+    height: 35px;
+}
+        
+.fa-map-marker-alt{
+    border:3px solid rgb(168, 168, 168);
+    background: rgb(168, 168, 168);
+    width: 30px;
+    text-align: center;
+    color: white;
+    vertical-align: middle;
+}
+
+#gsearch{
+    border:3px solid rgb(168, 168, 168);
+    outline: none;
+}
+
+.search-button{
+    width: 120px;
+    background: #0065FC;
+    border:3px solid #0065FC;
+    border-radius: 0 5px 5px 0;
+    color: #fff;
+}
+
 /*MID AREA*/
 .mid-total-area{
-    display: grid;
+    display: flex;
 }
     /*Main mid-area*/
 
-section .middle-section{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(601px, 1fr));
+.middle-section{
+    flex-grow: 2;
+    background: yellow;
 }
+
+.option-cards-area{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.card-bg{
+    background: gray;
+    border: 5px solid white;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+}
+
     /*aside mid-area*/
 aside .middle-aside{
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
 }
+
 /*BOTTOM AREA*/
+.activites-cards-area{
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+}
+
+.activites-cards-area div{
+    align-items: stretch;
+}
+
+.activity-card{
+    background: orange;
+}
 
 /*FOOTER*/
 
+footer{
+    flex-direction: column;
+}
 
 footer div{
     flex-grow: 1;
     flex-wrap: wrap;
     flex-basis: 30%;
-    padding: 30px;
 }
 
 .footer-div-separator h2{
@@ -103,3 +184,10 @@ footer div{
     margin-bottom: 8px;
     list-style: none;
 }
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (min-width: 800px) {
+    footer {
+      flex-direction: row;
+    }
+  }
