@@ -92,19 +92,24 @@ form{
     position: relative;
     display: flex;
     height: 35px;
+  
 }
         
 .fa-map-marker-alt{
-    border:3px solid rgb(168, 168, 168);
-    background: rgb(168, 168, 168);
+    border:3px solid #F2F2F2;
+    background: #F2F2F2;
     width: 30px;
+    height: 35px;
     text-align: center;
-    color: white;
-    vertical-align: middle;
+    color: grey;
+    vertical-align: bottom;
+    font-size: 20px;
+
+    padding-top: 4.5px;
 }
 
 #gsearch{
-    border:3px solid rgb(168, 168, 168);
+    border:3px solid #F2F2F2;
     outline: none;
 }
 
