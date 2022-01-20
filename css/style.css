@@ -225,6 +225,16 @@ form{
     border-top-right-radius: 10px;
 }
 
+.star-row i{
+    color: #0065FC;
+}
+
+.empty-star i:last-child{
+    color: rgb(204, 204, 204) 
+}
+
+.empty-star-2 i:last-child
+
     /*aside mid-area*/
 .middle-aside{
     display: flex;
@@ -243,17 +253,23 @@ form{
 .aside-card-area{
     display: flex;
     flex-direction: column;
+    gap: 25px;
 }
 
 .aside-card{
     display: flex;
+    height: 120px;
 }
 
 .aside-card img{
-    width: 150px;
+    width: 120px;
     height: 100%;
     object-fit: cover;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
 }
+
+
 
 /*BOTTOM AREA*/
 .activites-cards-area{
