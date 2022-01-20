@@ -84,14 +84,15 @@ header nav{
 }
 
 /*TOP AREA*/
-.filter-ul li{
-    display: inline-block;
+.top-section h1{
+    margin-bottom: 0.7em;
 }
 
 form{
     position: relative;
     display: flex;
     height: 35px;
+    margin: 0.7em auto 1em auto;
   
 }
         
@@ -104,7 +105,8 @@ form{
     color: grey;
     vertical-align: bottom;
     font-size: 20px;
-
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
     padding-top: 4.5px;
 }
 
@@ -117,29 +119,89 @@ form{
     width: 120px;
     background: #0065FC;
     border:3px solid #0065FC;
-    border-radius: 0 5px 5px 0;
+    border-radius: 0 10px 10px 0;
     color: #fff;
+    -webkit-border-radius: 0 10px 10px 0;
+    -moz-border-radius: 0 10px 10px 0;
+    -ms-border-radius: 0 10px 10px 0;
+    -o-border-radius: 0 10px 10px 0;
+    font-weight: 600;
+}
+
+    /*Filters in top area*/
+
+.filter-ul{
+    display: flex;
+}
+
+.filter-ul li{
+    list-style: none;
+    margin: auto 1.8em auto 0;
+    line-height: 2em;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.filter-ul li *{display: inline-block;}
+
+.filter-ul li p{
+    margin: auto 1em;
+    font-weight: 600;
+}
+
+.filtre-item{
+    border: 2px solid rgb(184, 184, 184);
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+ /*   max-height: 35px; */
+}
+
+.filtre-item i{
+    color: #1E73FC;
+    text-align: center;
+    vertical-align: bottom;
+    width: 35px;
+    height: 35px;
+    background: #DFECFF;
+    border-radius: 90px;
+    -webkit-border-radius: 90px;
+    -moz-border-radius: 90px;
+    -ms-border-radius: 90px;
+    -o-border-radius: 90px;
+    padding-top: 9px;
+}
+
+.under-title{
+    margin: 2em auto;
 }
 
 /*MID AREA*/
 .mid-total-area{
     display: flex;
+    justify-content: space-around;
+    gap: 2.2em;
 }
     /*Main mid-area*/
 
 .middle-section{
-    flex-grow: 2;
-    background: yellow;
+    flex-grow: 1;
+    background: #F2F2F2;
+    border-radius: 17px;
+    padding: 35px;
+    width: 65%;
 }
 
 .option-cards-area{
     display: flex;
     flex-wrap: wrap;
-    gap: 5px;
+    gap: 35px;
 }
 
 .card-bg{
-    background: gray;
+    background: white;
     border: 5px solid white;
     border-radius: 15px;
     -webkit-border-radius: 15px;
@@ -148,9 +210,49 @@ form{
     -o-border-radius: 15px;
 }
 
+.card-option{
+    flex: 1 0 25%;
+}
+
+.card-option img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-main-image{
+    height: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
     /*aside mid-area*/
-aside .middle-aside{
-    
+.middle-aside{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    width: 25%;
+    background: #F2F2F2;
+    padding: 10px 30px;
+    border-radius: 17px;
+    -webkit-border-radius: 17px;
+    -moz-border-radius: 17px;
+    -ms-border-radius: 17px;
+    -o-border-radius: 17px;
+}
+
+.aside-card-area{
+    display: flex;
+    flex-direction: column;
+}
+
+.aside-card{
+    display: flex;
+}
+
+.aside-card img{
+    width: 150px;
+    height: 100%;
+    object-fit: cover;
 }
 
 /*BOTTOM AREA*/
