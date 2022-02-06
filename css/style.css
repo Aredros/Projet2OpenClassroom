@@ -32,32 +32,20 @@ footer{
    background: #F2F2F2;
 }
 
-/*header*/
-header{
-    display: flex; 
-    flex-direction: column;
-}
+
 
 /*Nav bar*/
-header img{
-    
-}
+.header-row img{ align-self: center;}
 
-header nav{
-    
-}
-
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (min-width: 800px) {
-    header{
+header{
+        display: flex;
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .menu-phone-button {
+.menu-phone-button {
       display: none;
     }
-  }
 
 
 
@@ -132,6 +120,7 @@ form{
 
 .filter-ul{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .filter-ul li{
@@ -159,6 +148,11 @@ form{
  /*   max-height: 35px; */
 }
 
+.filtre-item:hover{
+    border: 2px solid #1E73FC;
+}
+
+
 .filtre-item i{
     color: #1E73FC;
     text-align: center;
@@ -178,21 +172,23 @@ form{
     margin: 2em auto;
 }
 
-/*MID AREA*/
+
 .mid-total-area{
-    display: flex;
-    justify-content: space-around;
-    gap: 2.2em;
-}
-    /*Main mid-area*/
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        gap: 2.2em;
+    }
+
 
 .middle-section{
-    flex-grow: 1;
-    background: #F2F2F2;
-    border-radius: 17px;
-    padding: 35px;
-    width: 65%;
-}
+        width: 65%;
+        flex-grow: 1;
+        background: #F2F2F2;
+        border-radius: 17px;
+        padding: 35px;
+    }
+
 
 .option-cards-area{
     display: flex;
@@ -210,9 +206,11 @@ form{
     -o-border-radius: 15px;
 }
 
-.card-option{
-    flex: 1 0 25%;
-}
+
+    .card-option{
+        flex: 1 0 25%;
+    }
+
 
 .card-option img{
     width: 100%;
@@ -230,10 +228,8 @@ form{
 }
 
 .empty-star i:last-child{
-    color: rgb(204, 204, 204) 
+    color: rgb(204, 204, 204); 
 }
-
-.empty-star-2 i:last-child
 
     /*aside mid-area*/
 .middle-aside{
@@ -249,6 +245,7 @@ form{
     -ms-border-radius: 17px;
     -o-border-radius: 17px;
 }
+
 
 .aside-card-area{
     display: flex;
@@ -273,23 +270,93 @@ form{
 
 /*BOTTOM AREA*/
 .activites-cards-area{
+    flex-direction: row;
     display: flex;
-    gap: 10px;
+    gap: 35px;
     justify-content: space-around;
+    margin-bottom: 4em;
+    height: 400px;
+    text-align: center;
+}
+
+.bottom-section h3{
+    margin-top: 10px;
 }
 
 .activites-cards-area div{
     align-items: stretch;
 }
 
-.activity-card{
-    background: orange;
+.big-card, .two-cards{
+    flex-basis: 24%;
 }
+
+.activity-card div img{
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.big-card{
+    box-shadow: 6px 4px 5px #dbdad5;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
+.big-card div{
+    height: 89%;
+}
+
+.small-card-1{
+    height: 210px;
+    box-shadow: 6px 4px 5px #dbdad5;
+    border-radius: 20px;
+}
+
+.text-text{
+    height: 60px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.image-div{
+    height:160px;
+}
+
+.small-card-2{
+    margin-top: 40px;
+    height: 150px;
+    box-shadow: 6px 4px 5px #dbdad5;
+    border-radius: 20px;
+}
+
+.small-card-2 div{
+    height: 70%;
+}
+
+.small-card-3{
+height: 190px;
+box-shadow: 6px 4px 5px #dbdad5;
+border-radius: 20px;
+}
+.small-card-3:first-child{
+    margin-bottom: 20px;
+}
+
+.small-card-3 div{
+    height: 78%;
+}
+
 
 /*FOOTER*/
 
 footer{
-    flex-direction: column;
+    flex-direction: row;
 }
 
 footer div{
@@ -307,10 +374,3 @@ footer div{
     margin-bottom: 8px;
     list-style: none;
 }
-
-/* Responsive layout - makes a one column layout instead of a two-column layout */
-@media (min-width: 800px) {
-    footer {
-      flex-direction: row;
-    }
-  }

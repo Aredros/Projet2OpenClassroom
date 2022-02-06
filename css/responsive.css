@@ -1,0 +1,81 @@
+/* -- RESPONSIVE : TABLETTE (992px ) -- */
+
+@media (max-width: 992px)
+{
+
+    body{
+        
+    }
+}
+
+
+/* -- RESPONSIVE : TELEPHONE ( 768px) -- */
+
+
+@media (max-width: 768px)
+{
+    .filtre-prephrase{width: auto;}
+
+/*header*/
+header{
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+/*MID AREA*/
+.mid-total-area{
+    flex-direction: column;
+}
+
+    /*Main mid-area*/
+
+.middle-section{
+        width: auto;
+    }
+
+.card-option{
+        flex: 1 0 100%;
+    }
+
+.middle-aside{
+        width: auto;
+    }
+
+/*BOTTOM AREA*/
+.activites-cards-area{
+    flex-direction: column;
+height: auto;}
+
+.big-card, .two-cards {
+    flex-basis: 0% !important;
+}
+
+.big-card, .small-card-1, .small-card-2, .small-card-3{
+    flex-basis: 100%;
+    height: 150px;
+    flex: 0 0 100%;
+}
+
+.big-card div, .small-card-1 div, .small-card-2 div, .small-card-3 div{
+    height: 70%;
+}
+
+/*FOOTER*/
+
+footer{
+    flex-direction: column;
+}
+
+}
+
+
+/* -- RESPONSIVE : TELEPHONE ( moins de 450px) -- */
+
+
+@media (max-width: 450px)
+{
+    body{
+       
+    }
+}
