@@ -59,7 +59,7 @@ header{
 }
 
 #nav-menu ul li a{
-    color: rgb(168, 168, 168);
+    color: rgb(146, 146, 146);
     text-decoration: none;
     padding: 30px 20px;
     border-top: 2px solid transparent;
@@ -180,6 +180,19 @@ form{
         gap: 2.2em;
     }
 
+.aside-card-content, .card-option{
+    padding: 5px 10px;
+}
+
+.aside-card-content h3, .card-option h3{
+    font-size: 15px;
+} 
+
+.aside-card-content p, .card-option p{
+    padding-top: 2px;
+    font-size: 13px;
+} 
+
 
 .middle-section{
         width: 65%;
@@ -204,11 +217,17 @@ form{
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
+    box-shadow: 6px 4px 5px #dbdad5;
+}
+
+.aside-card-content, .card-bg{
+    position: relative;
 }
 
 
     .card-option{
         flex: 1 0 25%;
+        height: 180px;
     }
 
 
@@ -223,11 +242,21 @@ form{
     border-top-right-radius: 10px;
 }
 
+.star-row{
+    position: absolute;
+        bottom: 0;
+        left: 10px;
+}
+
 .star-row i{
     color: #0065FC;
 }
 
 .empty-star i:last-child{
+    color: rgb(204, 204, 204); 
+}
+
+.empty-star-2 i:nth-child(4){
     color: rgb(204, 204, 204); 
 }
 
@@ -277,6 +306,12 @@ form{
     margin-bottom: 4em;
     height: 400px;
     text-align: center;
+}
+
+.bottom-section h2{
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 700;
 }
 
 .bottom-section h3{
