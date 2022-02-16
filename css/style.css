@@ -43,6 +43,10 @@ header{
         justify-content: space-between;
     }
 
+.header-logo{
+    height:50px; width:100px
+}
+
 .menu-phone-button {
       display: none;
     }
