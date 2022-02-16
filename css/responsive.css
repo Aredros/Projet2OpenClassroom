@@ -1,0 +1,218 @@
+/* -- RESPONSIVE : TABLETTE (992px ) -- */
+
+@media (max-width: 992px)
+{
+    .filtre-prephrase{
+        flex: 0 0 100%;
+        text-align: left !important;
+    }
+
+    .filter-ul li{
+        margin: auto 1.3em auto 0;
+    }
+
+    .option-cards-area {
+        gap: 13px;}
+
+    .mid-total-area{
+            display: flex;
+            flex-direction: column-reverse;
+            padding-left: 0;
+            padding-right: 0;
+        }
+    
+    .middle-section{
+        width: 100%;
+    }
+
+    /*--------------ASIDE AREA----------*/
+    .middle-aside{
+        width: 100%;
+    }
+
+    .aside-card-area{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .aside-card{
+        display: flex;
+        flex-direction: column;
+        height: 180px;
+        width: 32%;
+    }
+
+    .aside-card-content{
+        height: 85px;
+    }
+
+    .middle-section{
+        width: auto;
+        background: white;
+    }
+
+
+.middle-aside{
+        width: auto;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+}
+
+.aside-card img{
+    width: 225px;
+    height: 90px;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+
+    /*----------------------BOTTOM AREA-----------------------------*/
+    .activites-cards-area{
+        flex-wrap: wrap;
+        height: auto;
+    }
+
+    .big-card, .two-cards{
+        flex-basis: 40%;
+    }
+}
+
+
+/* -- RESPONSIVE : TELEPHONE ( 768px) -- */
+
+
+@media (max-width: 768px)
+{
+    .filtre-prephrase{width: auto;
+        text-align: left !important;}
+
+/*header*/
+header{
+    display: flex; 
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0;
+    margin-bottom: 50px;
+}
+
+.header-logo{
+    margin-top: 20px;
+}
+
+#nav-menu ul{
+    text-align: center;
+}
+
+#nav-menu ul li{
+    margin: 0;
+    width: 49%;
+    padding-bottom: 10px;
+    padding-top: 20px;
+    border-bottom: 2px solid rgb(206, 206, 206);
+}
+
+#nav-menu ul li a{
+    padding: 10px 20px;
+}
+
+#nav-menu ul li a:active{
+    border-bottom: 2px solid steelblue;
+    border-top: 0px solid white;
+}
+#nav-menu ul li a:hover{
+    border-top: 0px solid white;
+}
+
+/*MID AREA*/
+
+
+    /*Main mid-area*/
+
+.middle-section{
+        width: auto;
+        background: white;
+    }
+
+
+.card-option{
+        flex: 1 0 100%;
+    }
+
+.middle-aside{
+        width: auto;
+        border-radius: 0;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        -ms-border-radius: 0;
+        -o-border-radius: 0;
+}
+
+.aside-card-area{
+    flex-direction: column;
+}
+
+.aside-card{
+    flex-direction: row;
+    height: 100px;
+    width: auto;
+}
+
+.aside-card-content{
+    height: auto;
+}
+
+.aside-card img{
+    width: 120px;
+    height: 100%;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+
+/*BOTTOM AREA*/
+.activites-cards-area{
+    flex-direction: column;
+    height: auto;}
+
+.big-card, .two-cards {
+    
+}
+
+.big-card, .small-card-1, .small-card-2, .small-card-3{
+    height: 150px;
+    flex-basis: auto;
+}
+
+.big-card{
+    height: 150px !important;
+}
+
+.big-card div, .small-card-1 div, .small-card-2 div, .small-card-3 div{
+    height: 70%;
+}
+
+/*FOOTER*/
+
+footer{
+    flex-direction: column;
+}
+
+}
+
+
+/* -- RESPONSIVE : TELEPHONE ( moins de 450px) -- */
+
+
+@media (max-width: 450px)
+{
+    body{
+       
+    }
+}
