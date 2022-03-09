@@ -14,7 +14,9 @@
 }
 
 body{
+
 }   
+
 /*padding whole site*/
 header, footer div{
     padding: 30px;
@@ -125,6 +127,7 @@ form{
 .filter-ul{
     display: flex;
     flex-wrap: wrap;
+    gap: 5px;
 }
 
 .filter-ul li{
@@ -136,6 +139,7 @@ form{
 }
 
 .filter-ul li *{display: inline-block;}
+
 
 .filter-ul li p{
     margin: auto 1em;
@@ -203,9 +207,13 @@ form{
         flex-grow: 1;
         background: #F2F2F2;
         border-radius: 17px;
-        padding: 35px;
+        padding: 10px 35px;
     }
 
+.title-mid-section, .fa-chart-line{
+        font-size: 20px;
+        margin: 15px 0;
+    }
 
 .option-cards-area{
     display: flex;
@@ -221,7 +229,7 @@ form{
     -moz-border-radius: 15px;
     -ms-border-radius: 15px;
     -o-border-radius: 15px;
-    box-shadow: 6px 4px 5px #dbdad5;
+    box-shadow: 3px 4px 5px #e4e3de;
 }
 
 .aside-card-content, .card-bg{
@@ -279,6 +287,17 @@ form{
     -o-border-radius: 17px;
 }
 
+.afficher-plus{
+    margin: 20px 5px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.mid-sect-title-area{
+    display: flex;
+    justify-content: space-between;
+}
+
 
 .aside-card-area{
     display: flex;
@@ -313,7 +332,7 @@ form{
 }
 
 .bottom-section h2{
-    margin-top: 30px;
+    margin-top: 20px;
     margin-bottom: 15px;
     font-weight: 700;
 }

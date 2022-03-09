@@ -130,14 +130,15 @@ header{
 
 /*MID AREA*/
 
+.no-margin{margin: 0 !important}
 
     /*Main mid-area*/
 
 .middle-section{
         width: auto;
         background: white;
+        padding-top: 0;
     }
-
 
 .card-option{
         flex: 1 0 100%;
@@ -150,6 +151,7 @@ header{
         -moz-border-radius: 0;
         -ms-border-radius: 0;
         -o-border-radius: 0;
+        padding: 15px 20px 30px
 }
 
 .aside-card-area{
@@ -158,7 +160,7 @@ header{
 
 .aside-card{
     flex-direction: row;
-    height: 100px;
+    height: 130px;
     width: auto;
 }
 
